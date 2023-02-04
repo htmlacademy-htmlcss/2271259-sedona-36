@@ -5,6 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=`, initial-scale=1.0">
   <title>Catalog</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="page-header">
@@ -12,7 +16,7 @@
       <img src="images/sedona-logo.svg" alt="Sedona's logo" class="logo">
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a href="#" class="navigation-link navigation-link-current">Главная</a>
+          <a href="index.html" class="navigation-link navigation-link-current">Главная</a>
         </li>
         <li class="navigation-item">
           <a href="#" class="navigation-link">О Седоне</a>
@@ -41,9 +45,10 @@
       <button type="button">Хочу Сюда</button>
 
     </nav>
-   </header>
+  </header>
 
-   <main class="main-inner">
+  <main class="main-inner">
+  <div class="main-inner-filter">
     <header class="inner-header">
       <h1 class="inner-header-title">
         Гостиницы Седоны
@@ -76,13 +81,13 @@
          <li class="catalog-filter-item">
           <label class="control">
            <input type="checkbox" class="control-input" name="Swimming-pool" checked>
-           Бассейн
+           Бассейн:
           </label>
          </li>
          <li class="catalog-filter-item">
           <label class="control">
            <input type="checkbox" class="control-input" name="Parking" checked>
-           Парковка
+           Парковка:
           </label>
          </li>
          <li class="catalog-filter-item">
@@ -122,16 +127,18 @@
 
        </ul>
       </fieldset>
-      <h3 class="catalog-price-titile">
+
+      <h3 class="catalog-filter-title">
         Стоимость, ₽:
       </h3>
       <input type="text" placeholder="от">
       <input type="text" placeholder="до">
       <input type="range" >
 
-      <button class="button" type="submit">Применить</button>
+      <button class="submit" type="submit">Применить</button>
       <button class="reset" type="submit">Сбросить</button>
     </form>
+  </div>
 
       <h2 class="amount-of-hotels">
         Найдено гостиниц: 38
@@ -174,10 +181,10 @@
           От 4000 ₽
         </b>
 
-        <a href="#" class="hotel-card-button button">
+        <a href="#" class="hotel-card-button-details button">
           подробнее
         </a>
-        <a href="#" class="hotel-card-button button">
+        <a href="#" class="hotel-card-button-chosen button">
           в избранное
         </a>
         <div class="hotel-card-stars">
@@ -204,11 +211,11 @@
           От 5000 ₽
         </b>
 
-        <a href="#" class="hotel-card-button button">
+        <a href="#" class="hotel-card-button-details button">
           подробнее
         </a>
-        <a href="#" class="hotel-card-button button">
-          в избранное
+        <a href="#" class="hotel-card-button-chosen button button-selected">
+          в избранном
         </a>
         <div class="hotel-card-stars">
          <img src="#" alt="Star" class="hotel-card-star">
@@ -234,10 +241,10 @@
           От 2500 ₽
         </b>
 
-        <a href="#" class="hotel-card-button button">
+        <a href="#" class="hotel-card-button-details button">
           подробнее
         </a>
-        <a href="#" class="hotel-card-button button">
+        <a href="#" class="hotel-card-button-chosen button">
           в избранное
         </a>
         <div class="hotel-card-stars">
@@ -264,10 +271,10 @@
           От 1500 ₽
         </b>
 
-        <a href="#" class="hotel-card-button button">
+        <a href="#" class="hotel-card-button-details button">
           подробнее
         </a>
-        <a href="#" class="hotel-card-button button">
+        <a href="#" class="hotel-card-button-chosen button">
           в избранное
         </a>
         <div class="hotel-card-stars">
@@ -315,10 +322,7 @@
       </ul>
     </section>
 
-
-
-
-    <section class="mail">
+    <section class="catalog-mail">
       <h3 class="mail-title">
         Подпишитесь на рассылку
       </h3>
