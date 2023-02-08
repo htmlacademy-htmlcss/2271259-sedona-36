@@ -41,14 +41,22 @@
             </span>
           </a>
         </li>
+        <li class="navigation-item">
+          <a href="#" class="navigation-link">
+            <button type="button">
+              Хочу Сюда
+            </button>
+          </a>
+        </li>
       </ul>
-      <button type="button">Хочу Сюда</button>
+
 
     </nav>
-  </header>
+   </header>
 
-  <main class="main-inner">
-  <section class="main-inner-filter">
+  <main class="main-inner page-container">
+   <section class="main-inner-filter">
+    <!-- <div class="filter"> -->
     <header class="inner-header">
       <h1 class="inner-header-title">
         Гостиницы Седоны
@@ -139,8 +147,10 @@
       <button class="reset" type="submit">Сбросить</button>
      </form>
     </section>
-  </section>
-
+  </div>
+   </section>
+   <section class="catalog">
+      <div class="more-filters">
       <h2 class="amount-of-hotels">
         Найдено гостиниц: 38
       </h2>
@@ -167,7 +177,8 @@
         </a>
        </li>
       </ul>
-
+      </div>
+     <section class="product-list-catalog">
       <ul class="product-list">
         <li class="hotel-card">
         <img src="images/hotel-1.jpg" alt="Hotel Photo" class="card-photo">
@@ -288,8 +299,9 @@
          </span>
         </li>
       </ul>
-
-      <ul class="pagination">
+     </section>
+      <section class="pagination">
+      <ul class="pagination-list">
         <li class="pagination-item">
           <a  class="pagination-link pagination-current">
             1
@@ -321,10 +333,10 @@
           </a>
         </li>
       </ul>
-
-
-
-    <section class="catalog-mail">
+    </section>
+   </section>
+   <section class="catalog-mail">
+    <div class="mail-suscribe">
       <h3 class="mail-title">
         Подпишитесь на рассылку
       </h3>
@@ -338,10 +350,12 @@
         </button>
 
       </form>
-    </section>
+    </div>
+   </section>
   </main>
 
-   <footer class="page-footer">
+  <footer class="footer">
+    <div class="page-footer">
     <section class="footer-socials">
       <h2 class="visually-hidden">
         Контакты
@@ -377,6 +391,7 @@
         <img src="images/html-academy-logo.svg" alt="Html Academy logo" class="logo">
       </a>
     </section>
+    </div>
    </footer>
 </body>
 </html>
