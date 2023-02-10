@@ -81,6 +81,7 @@
       </h2>
 
      <form action="https://echo.htmlacademy.ru/" class="catalog-filter" method="get">
+      <section class="catalog-types">
       <fieldset class="catalog-filter-group">
         <legend class="catalog-filter-title">
           Инфраструктура:
@@ -135,16 +136,23 @@
 
        </ul>
       </fieldset>
-
+      </section>
+      <section class="catalog-types-price">
+       <section class="catalog-types-price-range">
       <h3 class="catalog-filter-title">
         Стоимость, ₽:
       </h3>
+      <div class="catalog-types-placeholders">
       <input type="text" placeholder="от">
       <input type="text" placeholder="до">
+      </div>
       <input type="range" >
-
-      <button class="submit" type="submit">Применить</button>
-      <button class="reset" type="submit">Сбросить</button>
+       </section>
+       <section class="catalog-types-price-buttons">
+        <button class="submit" type="submit">Применить</button>
+        <button class="reset" type="submit">Сбросить</button>
+       </section>
+      </section>
      </form>
     </section>
   </div>
@@ -160,7 +168,7 @@
       </select>
       <ul class="filter-buttons">
         <li class="filter-buttons-item">
-         <a href="#" class="button button-selected">
+         <a href="#" class="button button-icon-selected">
         <img src="#" alt="Icon" class="button-icon">
          </a>
         </li>
