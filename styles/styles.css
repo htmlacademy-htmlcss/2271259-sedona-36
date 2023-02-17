@@ -63,14 +63,23 @@ li {
   display: flex;
   padding: 0;
   margin-left: auto;
-
+  
 }
 
+.navigation-user button {
+  width: 160px;
+  min-height: 36px;
+}
+
+
 .navigation-item {
+  display: flex;
   padding:20px 16px;
   gap: 8px;
   min-width: 100px;
   min-height: 64px;
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -110,7 +119,9 @@ li {
 
 .hero {
   background-image: url(../images/index-background.jpg);
+  min-height: 480px;
 }
+
 
 .description{
   min-height: 261px;
@@ -333,7 +344,7 @@ li {
   background-image: url(../images/mail-background.jpeg) ;
   padding: 96px 258px 104px;
   background-size: cover;
-  min-height: 415px; ;
+  min-height: 434px; ;
 }
 
 .mail-title {
@@ -497,7 +508,8 @@ li {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 150px;
+  min-width: 150px;
+  min-height: 157px;
 
 }
 
@@ -647,12 +659,48 @@ li {
   gap: 20px;
 }
 
+.hotel-card {
+  padding: 20px;
+  gap: 16px;
+  min-height: 438px;
+}
 
 .hotel-photo-title {
   color: #000000;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+}
+
+.hotel-texts {
+  width: 300px;
+  min-height: 21px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding:0;
+  gap: 25px;
+}
+
+.hotel-buttons{
+  width: 300px;
+  min-height: 36px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding:0;
+  gap: 20px;
+}
+
+.hotel-ratings {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 20px;
+  width: 300px;
+  min-height: 37px;
 }
 
 .hotel-card-description {
@@ -670,7 +718,8 @@ li {
 }
 
 .hotel-card-button-details {
-  width: 88px;
+  width: 140px;
+  min-height: 36px;
   color: #ffffff;
   background-color: #756157;
   font-weight: 700;
@@ -680,6 +729,7 @@ li {
   text-transform: uppercase;
   display: flex;
   align-items: center;
+  justify-content: center;
 
 }
 
@@ -702,6 +752,7 @@ li {
 }
 
 .hotel-card-ranking{
+  width: 140px;
   background-color: #f2f2f2 ;
   color: #333333;
   font-weight: 400;
@@ -709,6 +760,20 @@ li {
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
+  margin-left: auto;
+}
+
+
+
+.hotel-card-button-chosen{
+  display: flex;
+  width: 140px;
+  min-height: 36px;
+  margin:0;
+  margin-left: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 .pagination {
