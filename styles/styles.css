@@ -58,26 +58,26 @@ li {
 }
 
 .navigation-user {
-  max-width: 310px;
   margin: 0;
   display: flex;
   padding: 0;
   margin-left: auto;
-  
+
 }
 
 .navigation-user button {
   width: 160px;
   min-height: 36px;
+
 }
 
 
 .navigation-item {
   display: flex;
-  padding:20px 16px;
+  /* padding:20px 16px; */
   gap: 8px;
   min-width: 100px;
-  min-height: 64px;
+  height: 64px;
   justify-content: center;
   align-items: center;
 
@@ -92,6 +92,31 @@ li {
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
+}
+
+.icon{
+  width: 18px;
+  height: 25px;
+  background-color: #ffffff;
+
+}
+
+.navigation-link-button{
+  display: flex;
+  width: 160px;
+  height: 36px;
+  background-color: #756157;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+
+
 }
 
 .page-container {
@@ -347,6 +372,13 @@ li {
   min-height: 434px; ;
 }
 
+.mail-email-from {
+  background-color: #f2f2f2;
+  width: 452px;
+  min-height: 52px;
+  padding: 12px 20px;
+}
+
 .mail-title {
 
   color: #ffffff;
@@ -365,6 +397,13 @@ li {
 
 .mail-email {
   background-color: #f2f2f2;
+  width: 452px;
+  min-height: 52px;
+  padding: 12px 20px;
+}
+
+.mail-form button {
+  min-height: 52px;
 }
 
 .button {
@@ -397,19 +436,14 @@ li {
 }
 
 .contact-item {
+  display: flex;
   padding: 0 10px;
   gap: 10px;
   width: 47px;
   min-height: 40px;
+  justify-content: center;
+  align-items: center;
 }
-
-.contact-link{
-  background-color: #82B3D3;
-
-
-}
-
-
 
 .page-footer {
   width: 1060px;
@@ -421,6 +455,7 @@ li {
   padding: 0;
 
 }
+
 
 
 /* Catalog style */
@@ -447,12 +482,39 @@ li {
 
 }
 
+.filter-buttons {
+
+  width: 160px;
+  min-height: 48px;
+
+}
+
+.filter-icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter-buttons-item{
+  display: flex;
+  width: 48px;
+  height: 48px;
+  justify-content: center;
+  align-self: center;
+}
+
+.button-icon{
+  width: 16px;
+  height: 14px;
+}
+
 .inner-header-title {
   width: 1060px;
   color: #ffffff;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  margin-top: auto;
 
 
 }
@@ -465,14 +527,28 @@ li {
   justify-content: center;
   align-items: center;
   padding: 0;
+  gap: 10px;
+
 
 }
 
 .breadcrumbs-link {
+  display: flex;
   color: #ffffff;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
+  justify-content: center;
+  align-items: center;
+  height: 21px;
+
+}
+
+.breadcrumbs-link-icon{
+  width: 12px;
+  height: 12px;
+  
+
 
 }
 
@@ -495,12 +571,21 @@ li {
 
 }
 
+.catalog-filter-list {
+
+  margin: 0;
+  padding: 0;
+
+
+}
+
 .catalog-types {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 0;
   width: 370px;
+  margin-top: 15px;
 
 }
 
@@ -536,6 +621,12 @@ li {
   flex-direction: column;
   align-items: first baseline;
   padding: 0;
+  margin: 0;
+  margin-right: auto;
+}
+
+.catalog-filter-group:last-child {
+  margin-left: auto;
 }
 
 .catalog-types-price-buttons{
@@ -568,6 +659,12 @@ li {
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
+}
+
+.select-control {
+  width: 292px;
+  min-height: 49px;
+  padding: 14px 20px;
 }
 
 .submit {
@@ -612,7 +709,6 @@ li {
   flex-direction: column;
   align-items: flex-end;
   padding: 50px 70px 60px;
-  gap: 40px;
   box-sizing: border-box;
 }
 
@@ -649,12 +745,8 @@ li {
 
 .product-list {
   width: 1060px;
-  /* display: flex;
-  flex-direction: row;
-  align-items: flex-start; */
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   padding: 0;
   gap: 20px;
 }
@@ -670,10 +762,10 @@ li {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  margin-bottom: 0;
 }
 
 .hotel-texts {
-  width: 300px;
   min-height: 21px;
   display: flex;
   flex-direction: row;
@@ -684,7 +776,6 @@ li {
 }
 
 .hotel-buttons{
-  width: 300px;
   min-height: 36px;
   display: flex;
   flex-direction: row;
@@ -701,6 +792,7 @@ li {
   gap: 20px;
   width: 300px;
   min-height: 37px;
+  margin-top: 5px;
 }
 
 .hotel-card-description {
@@ -752,7 +844,11 @@ li {
 }
 
 .hotel-card-ranking{
-  width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 140px;
+  min-height: 37px;
   background-color: #f2f2f2 ;
   color: #333333;
   font-weight: 400;
@@ -764,8 +860,6 @@ li {
   margin-left: auto;
 }
 
-
-
 .hotel-card-button-chosen{
   display: flex;
   width: 140px;
@@ -774,6 +868,11 @@ li {
   margin-left: auto;
   align-items: center;
   justify-content: center;
+}
+
+.catalog-mail-form button {
+  min-height: 52px;
+
 }
 
 .pagination {
@@ -793,7 +892,6 @@ li {
   padding: 0;
   gap: 8px;
 }
-
 
 .pagination-item .pagination-current {
   background-color: #f2f2f2;
