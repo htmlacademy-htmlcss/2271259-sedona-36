@@ -1553,7 +1553,8 @@ li {
 }
 
 .reset:hover {
-  color:rgba(255, 255, 255, 0.2)  ;
+  color:rgba(255, 255, 255, 0.6);
+  
 }
 
 .reset:focus {
@@ -1562,6 +1563,11 @@ li {
 
 .reset:active {
   color:rgba(255, 255, 255, 0.3) ;
+  border: none;
+}
+
+.reset:disabled {
+  opacity: 0.1;
 }
 
 .amount-of-hotels {
@@ -1955,6 +1961,13 @@ li {
   border-radius: 4px;
 }
 
+.control-mark:focus {
+  border: 2px solid #83B3D3;
+  opacity: 100%;
+  width: 20px;
+  height: 20px;
+}
+
 
 .catalog-filter-item:hover {
   opacity: 50%;
@@ -2019,6 +2032,15 @@ li {
 .toggle-max {
   top: -8px;
   right: -10px;
+}
+.toggle-min:focus .toggle-max:focus {
+  border: 3px solid #83B3D3;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.toggle-min:active, .toggle-max:active {
+  border: 2px solid #83B3D3;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
 }
 
 .range-bar-left{
